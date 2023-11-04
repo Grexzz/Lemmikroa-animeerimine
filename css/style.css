@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&family=Sigmar+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: papayawhip;
+    overflow-x: hidden;
+}
+
+.heading {
+    text-align: center;
+}
+
+.retsept-heading {
+    color: blue;
+    font-family:  'Federo', sans-serif;
+    font-size: 2.5rem;
+}
+
+.pilt{
+    opacity: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    animation: pilt;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pilt {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
+
+.hakk-pealkiri{
+    font-size: 2rem;
+    color: rgb(224, 87, 224)
+}
+
+.hakk-koostisosad-tabel {
+    border: 2px solid black;
+    width: 25%;
+    margin: 0 auto;
+    color: rgb(224, 87, 224);
+    position: relative; /*top-right-bottom-left*/
+    animation: hakktabel;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hakktabel {
+    0% {left: -1000px}
+    85% {left: 50px;}
+    100% {left: 0}
+}
+
+.hakk-valmistamine{
+    border: 2px solid black;
+    width: 25%;
+    margin: 0 auto;
+    color: rgb(224, 87, 224);
+    position: relative;
+    animation: hakkvalm;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hakkvalm {
+    0% {right: -1000px}
+    85% {right: 50px;}
+    100% {right: 0}
+}
+
+.juust-pealkiri{
+    font-size: 2rem;
+    color: rgb(231, 198, 12)
+}
+
+.juust-koostisosad-tabel{
+    border: 2px solid black;
+    width: 25%;
+    margin: 0 auto;
+    color: rgb(231, 198, 12);
+    position: relative;
+    animation: juusttabel;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes juusttabel {
+    0% {left: -1000px}
+    85% {left: 50px;}
+    100% {left: 0}
+}
+
+.juust-valmistamine{
+    border: 2px solid black;
+    width: 25%;
+    margin: 0 auto;
+    color: rgb(231, 198, 12);
+    position: relative;
+    animation: juustvalm;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes juustvalm {
+    0% {right: -1000px}
+    85% {right: 50px;}
+    100% {right: 0}
+}
+
+.lisa-pealkiri{
+    font-size: 2rem;
+    color: royalblue
+}
+
+.lisa-koostisosad-tabel{
+    border: 2px solid black;
+    width: 25%;
+    margin: 0 auto;
+    color: royalblue;
+    position: relative;
+    animation: lisatabel;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lisatabel {
+    0% {left: -1000px}
+    85% {left: 50px;}
+    100% {left: 0}
+}
+
+.loppviimistlus{
+    border: 2px solid black;
+    width: 25%;
+    margin: 0 auto;
+    color: royalblue;
+    position: relative;
+    animation: loppviim;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loppviim {
+    0% {right: -1000px}
+    85% {right: 50px;}
+    100% {right: 0}
+}
+
+.footer {
+    text-align: end;
+    font-family: 'Sigmar One', cursive;
+}
